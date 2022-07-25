@@ -50,9 +50,16 @@ Dash.propTypes = {
 	dashLength: PropTypes.number.isRequired,
 	dashThickness: PropTypes.number.isRequired,
 	dashColor: PropTypes.string,
-	dashStyle: PropTypes.shape({
-    style: PropTypes.any,
-  }),
+	dashStyle: PropTypes.oneOfType(
+		PropTypes.shape({
+			style: PropTypes.any,
+		}),
+		PropTypes.arrayOf(
+			PropTypes.shape({
+				style: PropTypes.any,
+			}),
+		)
+	)
 }
 
 Dash.defaultProps = {
