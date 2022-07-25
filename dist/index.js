@@ -61,9 +61,11 @@ Dash.propTypes = {
 	dashLength: _propTypes2.default.number.isRequired,
 	dashThickness: _propTypes2.default.number.isRequired,
 	dashColor: _propTypes2.default.string,
-	dashStyle: _propTypes2.default.shape({
+	dashStyle: _propTypes2.default.oneOfType(_propTypes2.default.shape({
 		style: _propTypes2.default.any
-	})
+	}), _propTypes2.default.arrayOf(_propTypes2.default.shape({
+		style: _propTypes2.default.any
+	})))
 };
 
 Dash.defaultProps = {
