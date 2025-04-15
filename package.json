@@ -43,5 +43,6 @@
     "babel-preset-react": "^6.24.1",
     "husky": "^3.0.4"
   },
-  "types": "index.d.ts"
+  "types": "index.d.ts",
+  "packageManager": "yarn@3.2.3"
 }

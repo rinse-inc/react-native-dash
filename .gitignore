@@ -32,3 +32,9 @@ local.properties
 #
 node_modules/
 npm-debug.log
+
+# yarn
+yarn-error.log
+.yarn/
+.pnp.cjs
+.pnp.loader.mjs
